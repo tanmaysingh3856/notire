@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L203 0L203 271L0 271L0 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <image width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAFxJREFUeJztw7EJAAAIA7D6/9MuPUIwgSR8NA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHDFAv2qAAPh8BlKAAAAAElFTkSuQmCC" id="img_1" />
+    <pattern patternUnits="objectBoundingBox" y="-0%" height="100%" width="100%" id="pattern_1">
+      <use xlink:href="#img_1" transform="matrix(1.1015625 0 0 1.1015625 0 0)" />
+    </pattern>
+  </defs>
+  <path d="M492 0C496.419 0 500 3.58112 500 8L500 492C500 496.419 496.419 500 492 500L8 500C3.58112 500 0 496.419 0 492L0 8C0 3.58112 3.58112 0 8 0L492 0Z" id="Rectangle" fill="#D4CCCC" stroke="none" />
+  <path d="M75 180L216 180L216 321L75 321L75 180Z" id="Create" fill="url(#pattern_1)" fill-rule="evenodd" stroke="none" />
+  <g id="N" clip-path="url(#clip_1)" transform="translate(149 115)">
+    <g transform="translate(0, 57.6)" id="N">
+      <path d="M175.68 173.088L177.12 230.4L135.072 230.4L59.328 104.832L57.024 104.832L56.736 166.464L57.888 230.4L22.464 230.4L24.48 175.68L22.752 44.928L64.512 44.928L140.256 170.496L142.848 170.496L141.984 46.656L177.984 44.352L175.68 173.088Z" />
+    </g>
+  </g>
+</svg>
