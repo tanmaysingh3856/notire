@@ -17,9 +17,9 @@ export const metadata: Metadata = {
         href: "/n-white.svg",
       },
       {
-        media: "(prefer-color-scheme: light)",
-        url: "/n-white.svg",
-        href: "/n-white.svg",
+        media: "(prefer-color-scheme: dark)",
+        url: "/n-dark.svg",
+        href: "/n-dark.svg",
       }
     ]
   }
