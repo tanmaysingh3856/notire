@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Icon } from "lucide-react";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,18 +11,18 @@ export const metadata: Metadata = {
   description: "Connected workspace where better , faster works happens",
   icons: {
     icon: [
-    { 
-      media: "(prefers-color-scheme: dark)",
-      url: "/n-white.svg",
-      href: "/n-white.svg",
-    },
-    { 
-      media: "(prefers-color-scheme: light)",
-      url: "/n-white.svg",
-      href: "/n-white.svg",
-    },
-  ],
-},
+      {
+        media: "(prefer-color-scheme: light)",
+        url: "/n-white.svg",
+        href: "/n-white.svg",
+      },
+      {
+        media: "(prefer-color-scheme: light)",
+        url: "/n-white.svg",
+        href: "/n-white.svg",
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -30,8 +31,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+        storageKey="notire-theme-2"
+        >
+        {children}
+        </ThemeProvider>
+        </body>
     </html>
   );
 }
